@@ -1,1 +1,14 @@
-Hello, this is a test
+GITHUB - HOW TO MAKE SUBLIME TEXT OPEN FROM TERMINAL
+
+open -a /Applications/Sublime\ Text.app
+If Sublime Text opens, all is good with your setup. After that, we just need to add one line to your .bash_profile, and you’re good to go.
+
+#open up .bash_profile for editing
+nano ~/.bash_profile
+#add this command to the end of .bash_profile
+alias sublime="open -a /Applications/Sublime\ Text.app"
+#then run this command to refresh the .bash_profile with this new command
+source ~/.bash_profile
+
+Then go to terminal and type 
+==> sublime <file-name>
